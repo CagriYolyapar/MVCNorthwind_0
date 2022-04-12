@@ -1,0 +1,32 @@
+﻿@model Category
+
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+
+<div class="panel panel-primary">
+    <div class="panel panel-body">
+        @using (Html.BeginForm())
+        {
+            <div>
+                @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control",placeholder="Isim giriniz" })
+            </div>
+
+            <br /> <br />
+
+            <div>
+                @Html.TextBoxFor(x => x.Description, new { @class = "form-control",placeholder="Aciklama giriniz" })
+            </div>
+
+            <br />
+
+
+            <button>Ekle</button>
+
+        }
+
+    </div>
+
+</div>
+

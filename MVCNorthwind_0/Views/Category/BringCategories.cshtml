@@ -1,0 +1,28 @@
+﻿@model List<Category>
+
+@{
+    ViewBag.Title = "BringCategories";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Isim</th>
+            <th>Aciklama</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Category item in Model)
+        {
+            <tr>
+                <td>@item.CategoryID</td>
+                <td>@item.CategoryName</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
